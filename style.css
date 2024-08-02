@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+.container{
+    margin-inline: 80px;
+}
+
+body{
+    background-color: #f9f8f8;;
+}
+/* START HEADER */
+header{
+    margin: 50px 30px 0 130px;
+}
+/* START MENU */
+nav{
+    display: flex;
+    align-items: center;
+}
+
+.images{
+    width: 75px;
+    text-align: center;
+    position: relative;
+    display: none;
+}
+.images .open{
+    position: absolute;
+    width: 32px;
+    height: 18px;
+    background-image: url("./images/icon-menu.svg");
+    top: -11px;
+    display: none;
+    cursor: pointer;
+}
+.images .closed{
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    background-image: url("./images/icon-close-menu.svg");
+    top: -15px;
+    left: 3px;
+    cursor: pointer;
+}
+
+nav .menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+nav .menu .txt-menu{
+    margin-left: 20px;
+}
+
+nav .menu .list-menu{
+    display: flex;
+    gap: 30px;
+    margin-top: -12px;
+    position: relative;
+}
+
+nav .menu .list-menu > li > a{
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #777;
+}
+
+nav .menu .list-menu .links{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 160px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: 1px solid #afa5a5;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+/* TOGGLE DROP DOWN */
+nav .menu .list-menu .drop{
+    display: none;
+}
+
+nav .menu .list-menu .links > li > a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #777;
+}
+/* END MENU */
+
+/* START LOGIN */
+header button{
+    padding: 10px;
+    font-size: 14px;
+    color: #777;
+    text-transform: capitalize;
+    width: 90px;
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+header .btn{
+    border: 1px solid #afa5a5;
+    border-radius: 20px;
+    background-color: white;
+    margin-left: -20px;
+    display: inline-block;
+}
+/* END LOGIN */
+
+@media (max-width: 900px){
+    nav{
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .images,
+    .images .open{
+        display: block;
+    }
+
+    nav .menu,
+    nav .menu .list-menu{
+        display: block;
+    }
+    nav .menu{
+        margin-top: 25px;
+    }
+    nav .ctn{
+        margin-top: 25px;
+        display: none;
+    }
+    nav .menu .txt-menu{
+        margin: 0;
+    }
+    nav .menu .list-menu .links{
+        position: relative;
+    }
+    header button{
+        display: block;
+        text-align: start;
+        margin-top: 10px;
+        padding: 0;
+    }
+    header .btn{
+        padding: 10px;
+    }
+    
+}
+
+/* END HEADER */
+
+/* START CONTENT */
+section{
+    padding: 30px 0 60px;
+}
+
+.text-content{
+    display: flex;
+    justify-content: space-between;
+}
+/* START SLIDE LEFT */
+.text-content .head-text{
+    width: 45%;
+}
+.text-content .head-text h1{
+    margin-top: 50px;
+    font-size: 75px;
+    color: #212529;
+}
+.text-content .head-text h1 span{
+    text-transform: capitalize;
+}
+
+.text-content .head-text p{
+    font-size: 20px;
+}
+
+.text-content .head-text [type="submit"]{
+    display: inline-block;
+    margin-block: 120px;
+    font-size: 20px;
+    width: 200px;
+    padding: 20px 15px;
+    border-radius: 8px;
+    border: none;
+    background-color: black;
+    color: white;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.text-content .head-text [type="submit"]:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid #afa5a5;
+}
+
+.footer-text{
+    display: flex;
+    justify-content: space-between;
+}
+/* END SLIDE LEFT */
+
+/* START SLIDE RIGHT */
+.image-content{
+    width: 42%;
+}
+.image-content img{
+    width: 100%;
+}
+/* END SLIDE RIGHT */
+
+@media (max-width: 900px){
+    .container{
+        margin-inline: 20px;
+    }
+    .text-content{
+        flex-direction: column-reverse;
+    }
+    .text-content .head-text{
+        width: 100%;
+    }
+    .image-content{
+        width: 100%;
+    }
+}
+
+/* END CONTENT */
