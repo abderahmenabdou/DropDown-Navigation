@@ -1,91 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <!-- START HEADER -->
     <header>
-        <nav>
-            <!-- START NAVBAR MENU -->
-            <img src="./images/logo.svg" alt="" class="logo">
-            <div class="images" onclick="menuBar()">
-                <div id="open" class="open"></div>
-                <div id="closed" class=""></div>
-            </div>
-            <div id="menu" class="menu ctn">
-                
-                <div class="txt-menu">
-                    <ul class="list-menu">
-                        <li onclick="dropDown()"><a href="#">features <img src="./images/icon-arrow-down.svg" alt=""></a>
-                        <!-- links -->
-                        <ul id="dropDown" class="links drop">
-                            <li><a href="#"><img src="./images/icon-todo.svg" alt=""> to do list</a></li>
-                            <li><a href="#"><img src="./images/icon-calendar.svg" alt=""> calendar</a></li>
-                            <li><a href="#"><img src="./images/icon-reminders.svg" alt=""> reminder</a></li>
-                            <li><a href="#"><img src="./images/icon-planning.svg" alt=""> planning</a></li>
-                        </ul>
-                        </li>
-                        <li onclick="dropDown2()"><a href="#">company <img src="./images/icon-arrow-down.svg" alt=""></a>
-                        
-                            <!-- links -->
-                        <ul id="dropDown2" class="links drop">
-                            <li><a href="#">history</a></li>
-                            <li><a href="#">our team</a></li>
-                            <li><a href="#">blog</a></li>
-                        </ul>
-                        </li>
-                        <li><a href="#">career</a></li>
-                        <li><a href="#">about</a></li>
-                    </ul>
-                </div>
-                 <!-- START LOGIN -->
-            <div>
-                <button>login</button>
-                <button class="btn">register</button>
-            </div>
-            <!-- END LOGIN -->
-            </div>
-            <!-- END NAVBAR MENU -->
-            
-           
-        </nav>
+      <nav>
+        <!-- START NAVBAR MENU -->
+        <img src="./images/logo.svg" alt="" class="logo" />
+        <div class="images" onclick="menuBar()">
+          <div id="open" class="open"></div>
+          <div id="closed" class=""></div>
+        </div>
+        <div id="menu" class="menu ctn">
+          <div class="txt-menu">
+            <ul class="list-menu">
+              <li class="arrow">
+                <a href="#"
+                  >features <img src="./images/icon-arrow-down.svg" alt=""
+                /></a>
+                <!-- links -->
+                <ul class="links drop">
+                  <li>
+                    <a href="#"
+                      ><img src="./images/icon-todo.svg" alt="" /> to do list</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img src="./images/icon-calendar.svg" alt="" />
+                      calendar</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img src="./images/icon-reminders.svg" alt="" />
+                      reminder</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img src="./images/icon-planning.svg" alt="" />
+                      planning</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="arrow">
+                <a href="#"
+                  >company <img src="./images/icon-arrow-down.svg" alt=""
+                /></a>
+
+                <!-- links -->
+                <ul class="links drop">
+                  <li><a href="#">history</a></li>
+                  <li><a href="#">our team</a></li>
+                  <li><a href="#">blog</a></li>
+                </ul>
+              </li>
+              <li><a href="#">career</a></li>
+              <li><a href="#">about</a></li>
+            </ul>
+          </div>
+          <!-- START LOGIN -->
+          <div>
+            <button>login</button>
+            <button class="btn">register</button>
+          </div>
+          <!-- END LOGIN -->
+        </div>
+        <!-- END NAVBAR MENU -->
+      </nav>
     </header>
     <!-- END HEADER -->
 
     <!-- START CONTENT -->
     <section>
-        <div class="container">
-            <div class="text-content">
-                <!-- START SLIDE LEFT -->
-                <div class="head-text">
-                    <h1><span>make</span> <br>remote work</h1>
-                    <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+      <div class="container">
+        <div class="text-content">
+          <!-- START SLIDE LEFT -->
+          <div class="head-text">
+            <h1><span>make</span> <br />remote work</h1>
+            <p>
+              Get your team in sync, no matter your location. Streamline
+              processes, create team rituals, and watch productivity soar.
+            </p>
 
-                    <button type="submit">learn more</button>
+            <button type="submit">learn more</button>
 
-                    <div class="footer-text">
-                        <img src="./images/client-audiophile.svg" alt="">
-                        <img src="./images/client-databiz.svg" alt="">
-                        <img src="./images/client-maker.svg" alt="">
-                        <img src="./images/client-meet.svg" alt="">
-                    </div>
-                </div>
-                <!-- END SLIDE LEFT -->
-
-                <!-- START SLIDE RIGHT -->
-                <div class="image-content">
-                    <img src="./images/image-hero-desktop.png" alt="">
-                </div>
-                <!-- END SLIDE RIGHT -->
+            <div class="footer-text">
+              <img src="./images/client-audiophile.svg" alt="" />
+              <img src="./images/client-databiz.svg" alt="" />
+              <img src="./images/client-maker.svg" alt="" />
+              <img src="./images/client-meet.svg" alt="" />
             </div>
+          </div>
+          <!-- END SLIDE LEFT -->
+
+          <!-- START SLIDE RIGHT -->
+          <div class="image-content">
+            <img src="./images/image-hero-desktop.png" alt="" />
+          </div>
+          <!-- END SLIDE RIGHT -->
         </div>
+      </div>
     </section>
     <!-- End CONTENT -->
 
     <script src="main.js"></script>
-</body>
+  </body>
 </html>
