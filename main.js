@@ -20,9 +20,8 @@ document.addEventListener("DOMContentLoaded", function () {
       // }
     });
   });
-});
 
-function menuBar() {
+  function menuBar() {
   let open = document.getElementById("open");
   let closed = document.getElementById("closed");
   let menu = document.getElementById("menu");
@@ -31,3 +30,6 @@ function menuBar() {
   closed.classList.toggle("closed");
   menu.classList.toggle("ctn");
 }
+});
+
+
